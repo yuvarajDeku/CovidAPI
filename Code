@@ -1,0 +1,47 @@
+package com.testingmaven;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class CoronaAPI {
+
+
+	private static void India() throws IOException {
+		// TODO Auto-generated method stub
+		URL url=new URL("https://covid19.mathdro.id/api/countries/INDIA");
+		HttpURLConnection urlCon= (HttpURLConnection) url.openConnection();
+			BufferedReader buffer=new BufferedReader(new InputStreamReader(urlCon.getInputStream()) );
+			String output;
+			while((output=buffer.readLine())!=null) {
+				System.out.println(output);
+			}
+	}
+
+	private static void USA() throws IOException {
+		// TODO Auto-generated method stub
+		URL url=new URL("https://covid19.mathdro.id/api/countries/USA");
+		HttpURLConnection urlCon= (HttpURLConnection) url.openConnection();
+			BufferedReader buffer=new BufferedReader(new InputStreamReader(urlCon.getInputStream()) );
+			String output;
+			while((output=buffer.readLine())!=null) {
+				System.out.println(output);
+			}
+	}
+	
+	
+
+
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Covid Details of USA");
+		USA();
+		System.out.println("");
+		System.out.println("Covid Details of INDIA");
+		India();
+	
+}	
+}
