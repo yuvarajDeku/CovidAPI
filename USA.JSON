@@ -1,0 +1,33 @@
+Covid Details of USA
+{
+	"confirmed": {
+		"value": 87302037,
+		"detail": "https://covid19.mathdro.id/api/countries/USA/confirmed"
+	},
+	"recovered": {
+		"value": 0,
+		"detail": "https://covid19.mathdro.id/api/countries/USA/recovered"
+	},
+	"deaths": {
+		"value": 1017006,
+		"detail": "https://covid19.mathdro.id/api/countries/USA/deaths"
+	},
+	"lastUpdate": "2022-06-29T19:20:57.000Z"
+}
+
+Covid Details of INDIA
+{
+	"confirmed": {
+		"value": 43433345,
+		"detail": "https://covid19.mathdro.id/api/countries/INDIA/confirmed"
+	},
+	"recovered": {
+		"value": 0,
+		"detail": "https://covid19.mathdro.id/api/countries/INDIA/recovered"
+	},
+	"deaths": {
+		"value": 525077,
+		"detail": "https://covid19.mathdro.id/api/countries/INDIA/deaths"
+	},
+	"lastUpdate": "2022-06-29T19:20:57.000Z"
+}
